@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Online Patient Support System</string>
+    <string name="home_image_desc">Home icon</string>
+    <string name="pharma_image_desc">Pharmacy icon</string>
+    <string name="records_image_desc">Records icon</string>
+    <string name="fab_desc">Floating action button</string>
+
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:padding="28dp"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" >
+
+        <EditText
+            android:id="@+id/drugForm"
+            android:layout_width="319dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="drug form"
+            android:inputType="text" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:padding="28dp"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" >
+
+        <EditText
+            android:id="@+id/drugName"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="drug name"
+            android:inputType="text" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="347dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:padding="28dp"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grad">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="89dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:text="MEDICATIONS"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pills" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="57dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:text="Fill out the details below:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="32dp"
+        android:padding="28dp"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/patientName"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="patient name"
+            android:inputType="text"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:padding="28dp"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" >
+
+        <EditText
+            android:id="@+id/editTextText12"
+            android:layout_width="323dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="dosage"
+            android:inputType="text" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:text="Submit"
+        android:backgroundTint="@color/dark_blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    <Button
+        android:id="@+id/medicationsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Med"
+        android:backgroundTint="@color/dark_blue"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewmedicationsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:elevation="10dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="View"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/medicationsButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
