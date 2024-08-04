@@ -24,7 +24,6 @@
         </activity>
         <activity android:name=".login" />
 
-
         <activity android:name=".home" />
 
         <activity android:name=".findhome" />
@@ -35,6 +34,8 @@
         <activity android:name=".records" />
         <activity android:name=".records2" />
         <activity android:name=".viewrecords2" />
+        <activity android:name="com.example.onlinepatientsupportsystem.SecondMessaging" />
+        <activity android:name="com.example.onlinepatientsupportsystem.home2" />
 
     </application>
 </manifest>
