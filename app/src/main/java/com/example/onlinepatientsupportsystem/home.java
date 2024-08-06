@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class home extends AppCompatActivity {
 
-    private ImageView imageView20;
     private ImageView imageView19;
     private ImageView imageView18;
     private ImageView imageView22;
@@ -21,7 +20,6 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.home);
 
         // Initialize ImageView elements
-        imageView20 = findViewById(R.id.imageView20);
         imageView19 = findViewById(R.id.imageView19);
         imageView18 = findViewById(R.id.imageView18);
         imageView22 = findViewById(R.id.imageView22);
@@ -29,12 +27,6 @@ public class home extends AppCompatActivity {
         imageView24 = findViewById(R.id.imageView24);
 
         // Set click listeners for each ImageView
-        imageView20.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navigateToFindHome();
-            }
-        });
 
         imageView19.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,10 +64,6 @@ public class home extends AppCompatActivity {
         });
     }
 
-    private void navigateToFindHome() {
-        Intent intent = new Intent(this, findhome.class);
-        startActivity(intent);
-    }
 
     private void navigateToMedications() {
         Intent intent = new Intent(this, medications.class);
