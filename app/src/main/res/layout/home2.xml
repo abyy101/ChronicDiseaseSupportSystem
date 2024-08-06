@@ -11,7 +11,7 @@
         android:layout_width="403dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-light"
         android:text="            Hello, Welcome"
         android:textColor="@color/white"
@@ -25,7 +25,7 @@
         android:layout_width="399dp"
         android:layout_height="65dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="sans-serif"
         android:text="Please choose Service      below!"
         android:textColor="@color/white"
@@ -54,13 +54,13 @@
         >
         <View
             android:layout_width="wrap_content"
-            android:layout_height="202dp"
+            android:layout_height="290dp"
             android:background="@drawable/wave__1_" />
 
 
         <LinearLayout
             android:layout_width="435dp"
-            android:layout_height="330dp"
+            android:layout_height="360dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="50dp"
             android:orientation="horizontal">

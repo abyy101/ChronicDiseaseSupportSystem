@@ -31,8 +31,8 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="369dp"
-        android:layout_height="339dp"
+        android:layout_width="380dp"
+        android:layout_height="388dp"
         android:layout_marginTop="12dp"
         android:padding="28dp"
         app:cardCornerRadius="20dp"
@@ -48,7 +48,7 @@
             android:layout_marginTop="80dp"
             android:ems="10"
             android:inputType="text"
-            android:text="full name" />
+            android:hint="full name" />
 
         <EditText
             android:id="@+id/editTextText3"
@@ -58,7 +58,7 @@
             android:layout_marginTop="200dp"
             android:ems="10"
             android:inputType="text"
-            android:text="enter name of home" />
+            android:hint="enter name of home" />
 
         <ImageView
             android:id="@+id/imageView11"
@@ -80,70 +80,15 @@
             android:id="@+id/enrollbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="265dp"
             android:layout_marginLeft="200dp"
+            android:layout_marginTop="320dp"
+            android:text="Enroll"
+            android:textColor="@color/black"
             android:textSize="20dp"
-            android:text="Enroll" />
+            android:textStyle="bold" />
 
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_gravity="bottom"
-        android:layout_marginStart="-30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bottomAppBar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="2dp"
-            android:alpha="0.2"
-            app:backgroundTint="@color/my_secondary"
-            app:fabCradleMargin="8dp"
-            app:fabCradleRoundedCornerRadius="50dp"
-            app:fabCradleVerticalOffset="6dp" />
-
-
-        <ImageView
-            android:id="@+id/imageView21"
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/imageView22"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="40dp"
-
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/iconback" />
-
-        <ImageView
-            android:id="@+id/imageView23"
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="340dp"
-
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/settings" />
-
-        <ImageView
-            android:id="@+id/imageView24"
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="260dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/profile" />
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

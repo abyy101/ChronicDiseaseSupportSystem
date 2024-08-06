@@ -29,11 +29,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_HOME_NAME = "home_name";
 
-    // Messages Table
-    public static final String TABLE_NAME_MESSAGES = "Messages";
-    public static final String COLUMN_MESSAGE_ID = "message_id";
-    public static final String COLUMN_MESSAGE_TEXT = "message_text";
-    public static final String COLUMN_IS_SENT_BY_CURRENT_USER = "is_sent_by_current_user";
+
 
     public static final String TABLE_NAME_MEDICATIONS = "Medications";
     public static final String COLUMN_MEDICATION_ID = "medication_id";
@@ -59,11 +55,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     COLUMN_NAME + " TEXT, " +
                     COLUMN_HOME_NAME + " TEXT);";
 
-    private static final String TABLE_CREATE_MESSAGES =
-            "CREATE TABLE " + TABLE_NAME_MESSAGES + " (" +
-                    COLUMN_MESSAGE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    COLUMN_MESSAGE_TEXT + " TEXT, " +
-                    COLUMN_IS_SENT_BY_CURRENT_USER + " INTEGER);";
 
     private static final String TABLE_CREATE_MEDICATIONS =
             "CREATE TABLE " + TABLE_NAME_MEDICATIONS + " (" +
@@ -81,7 +72,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(TABLE_CREATE_RECORDS);
         db.execSQL(TABLE_CREATE_HOMES);
-        db.execSQL(TABLE_CREATE_MESSAGES);
         db.execSQL(TABLE_CREATE_MEDICATIONS);
 
     }
@@ -90,7 +80,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_RECORDS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_HOMES);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_MESSAGES);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_MEDICATIONS);
         onCreate(db);
     }

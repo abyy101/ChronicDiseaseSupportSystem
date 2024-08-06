@@ -67,53 +67,9 @@
         android:gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom">
-
-            <com.google.android.material.bottomappbar.BottomAppBar
-                android:id="@+id/bottomAppBar"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:alpha="0.2"
-                app:backgroundTint="@color/my_secondary"
-                app:fabCradleMargin="8dp"
-                app:fabCradleRoundedCornerRadius="50dp"
-                app:fabCradleVerticalOffset="6dp"
-                app:layout_anchorGravity="center" />
-
-            <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="123dp"
-                app:srcCompat="@drawable/home" />
-
-            <ImageView
-                android:id="@+id/imageView22"
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
-                app:srcCompat="@drawable/iconback" />
-
-            <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="41dp"
-                android:layout_height="47dp"
-                android:layout_marginLeft="340dp"
-                app:srcCompat="@drawable/settings" />
-
-            <ImageView
-                android:id="@+id/imageView24"
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="270dp"
-                app:srcCompat="@drawable/profile" />
-
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     </LinearLayout>
 
@@ -122,7 +78,9 @@
         android:layout_width="402dp"
         android:layout_height="74dp"
         android:layout_weight="1"
-        android:hint="Enter Contact Information"
+        android:text="Home"
+        android:textStyle="italic"
+        android:textSize="30dp"
         android:inputType="textMultiLine"
         android:maxLines="4"
         android:textColorHint="@color/black"
@@ -132,8 +90,9 @@
 
     <TextView
         android:id="@+id/textMsg"
-        android:layout_width="407dp"
-        android:layout_height="30dp"
+        android:layout_width="408dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="49dp"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toTopOf="@+id/inputLayout"
         app:layout_constraintEnd_toEndOf="parent"
